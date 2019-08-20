@@ -1,6 +1,6 @@
 import React from 'react';
 
-function spinner() {
+function Spinner() {
   return (
     <div class='spinner-grow' role='status'>
       <span class='sr-only'>Loading...</span>
@@ -8,4 +8,4 @@ function spinner() {
   );
 }
 
-export default spinner;
+export default Spinner;

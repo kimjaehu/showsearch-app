@@ -3,7 +3,7 @@ import SearchForm from './SearchForm';
 import { connect } from 'react-redux';
 import MoviesContainer from './MoviesContainer';
 
-import Spinner from '../layout/spinner';
+import Spinner from '../layout/Spinner';
 
 export class Landing extends Component {
   render() {
