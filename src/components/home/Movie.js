@@ -9,7 +9,7 @@ import Spinner from '../layout/Spinner';
 export class Movie extends Component {
   componentDidMount() {
     this.props.fetchMovie(this.props.match.params.id);
-    // this.props.setLoading();
+    this.props.setLoading();
   }
 
   render() {
@@ -76,16 +76,6 @@ export class Movie extends Component {
   }
 }
 
-// const mapStateToProps = state => ({
-//   loading: state.movies.loading,
-//   movie: state.movies.movie
-// });
-
-// export default connect(
-//   mapStateToProps,
-//   { fetchMovie, setLoading }
-// )(Movie);
-
 const mapStateToProps = state => ({
   loading: state.movies.loading,
   movie: state.movies.movie
@@ -93,5 +83,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  { fetchMovie }
+  { fetchMovie, setLoading }
 )(Movie);
