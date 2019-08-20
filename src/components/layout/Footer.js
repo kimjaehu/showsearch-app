@@ -13,8 +13,8 @@ const Footer = () => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              OMDB{' '}
-            </a>
+              OMDB
+            </a>{' '}
             API
           </div>
         </div>

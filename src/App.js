@@ -11,19 +11,21 @@ import Movie from './components/home/Movie';
 
 import store from './store';
 
-function App() {
-  return (
-    <Provider store={store}>
-      <Router>
-        <div>
-          <Navbar />
-          <Route exact path='/' component={Landing} />
-          <Route exact path='/movie/:id' component={Movie} />
-          <Footer />
-        </div>
-      </Router>
-    </Provider>
-  );
+class App extends Component {
+  render() {
+    return (
+      <Provider store={store}>
+        <Router>
+          <div>
+            <Navbar />
+            <Route exact path='/' component={Landing} />
+            <Route exact path='/movie/:id' component={Movie} />
+            <Footer />
+          </div>
+        </Router>
+      </Provider>
+    );
+  }
 }
 
 export default App;
