@@ -9,11 +9,13 @@ export class MoviesContainer extends Component {
     let content = '';
 
     content =
-      movies.Response === 'True'
-        ? movies.Search.map((movie, index) => (
-            <MovieCard key={index} movie={movie} />
-          ))
-        : null;
+      movies.Response === 'True' ? (
+        movies.Search.map((movie, index) => (
+          <MovieCard key={index} movie={movie} />
+        ))
+      ) : (
+        <h5>No movie found!</h5>
+      );
 
     return <div className='row'>{content}</div>;
   }
