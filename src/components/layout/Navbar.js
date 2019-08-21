@@ -14,7 +14,7 @@ const Navbar = () => {
           <ul className='navbar-nav ml-auto text-light d-inline-block'>
             <li className='nav-item d-inline-block mr-4'>
               <a
-                href='http://www.omdbapi.com/'
+                href='https://www.imdb.com/'
                 target='_blank'
                 rel='noopener noreferrer'
               >
