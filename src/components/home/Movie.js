@@ -49,7 +49,7 @@ export class Movie extends Component {
           </div>
         </div>
         <div className='row'>
-          <div className='card card-body bg-dark my-5 text-light'>
+          <div className='card card-body bg-light my-5 text-dark'>
             <div className='col-md-12'>
               <h3>About </h3>
               {movie.Plot}

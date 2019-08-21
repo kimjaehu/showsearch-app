@@ -20,11 +20,9 @@ export class SearchForm extends Component {
 
   render() {
     return (
-      <div className='jumbotron jumbotron-fluid mt-5 text-center'>
+      <div className='jumbotron bg-transparent jumbotron-fluid mt-5 text-center'>
         <div className='container'>
-          <h1 className='display-4 mb-3'>
-            <i className='fa fa-search' /> Search for a movie ,TV series ..
-          </h1>
+          <h1 className='display-4 mb-3'>SHOWSEARCH</h1>
           <form id='searchForm' onSubmit={this.onSubmit}>
             <input
               type='text'
@@ -33,7 +31,10 @@ export class SearchForm extends Component {
               placeholder='Search Movies, TV Series ...'
               onChange={this.onChange}
             />
-            <button type='submit' className='btn btn-primary btn-bg mt-3'>
+            <button
+              type='submit'
+              className='btn btn btn-outline-secondary btn-bg mt-3'
+            >
               Search
             </button>
           </form>

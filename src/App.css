@@ -1,3 +1,7 @@
+body {
+  font-family: 'Acme', sans-serif;
+}
+
 #movies img,
 #movie img {
   width: 100%;
@@ -9,14 +13,14 @@
   color: #00d8ff;
 }
 #imdb-logo {
-  color: #f5de50;
+  color: #ffc414;
 }
 @media (min-width: 960px) {
-  #movies .col-md-3 .well {
+  #movies .col-md-4 .well {
     height: 390px;
   }
 
-  #movies .col-md-3 img {
+  #movies .col-md-4 img {
     height: 240px;
   }
 }
