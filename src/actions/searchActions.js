@@ -11,7 +11,7 @@ export const searchMovie = text => dispatch => {
 export const fetchMovies = text => dispatch => {
   axios
     .get(
-      `http://www.omdbapi.com/?apikey=${
+      `https://www.omdbapi.com/?apikey=${
         process.env.REACT_APP_OMDB_API_KEY
       }&s=${text}`
     )
@@ -27,7 +27,7 @@ export const fetchMovies = text => dispatch => {
 export const fetchMovie = id => dispatch => {
   axios
     .get(
-      `http://www.omdbapi.com/?apikey=${
+      `https://www.omdbapi.com/?apikey=${
         process.env.REACT_APP_OMDB_API_KEY
       }&i=${id}`
     )
