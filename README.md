@@ -16,9 +16,17 @@ showSearch app allows users to search information on movies and tv shows. The ap
 
 ## Screenshots
 
-<p>Recipe Memo Main Screen</p>
+<p>showSearch Main Page</p>
 
-!["Recipe Memo Main Screen"](https://github.com/kimjaehu/RecipeMemo/blob/master/public/img/sce)
+!["showSearch Main Page"](https://github.com/kimjaehu/showsearch-app/blob/master/public/img/home.png?raw=true)
+
+<p>showSearch List of Movies</p>
+
+!["showSearch List of Movies"](https://github.com/kimjaehu/showsearch-app/blob/master/public/img/search.png?raw=true)
+
+<p>showSearch Movie Detail</p>
+
+!["showSearch Movie Detail"](https://github.com/kimjaehu/showsearch-app/blob/master/public/img/detail.png?raw=true)
 
 ### Dependencies
 
