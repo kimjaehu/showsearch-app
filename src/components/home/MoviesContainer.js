@@ -8,15 +8,15 @@ export class MoviesContainer extends Component {
     const { movies } = this.props;
     let content = '';
 
-    content =
-      movies.Response === 'True' ? (
-        movies.Search.map((movie, index) => (
-          <MovieCard key={index} movie={movie} />
-        ))
-      ) : (
-        <h5>No movie found!</h5>
-      );
-
+    if (movies.Response === 'True') {
+      content = movies.Search.map((movie, index) => (
+        <MovieCard key={index} movie={movie} />
+      ));
+    } else if (movies.Response === 'false') {
+      content = <h5>No movies found!</h5>;
+    } else {
+      content = null;
+    }
     return <div className='row'>{content}</div>;
   }
 }
